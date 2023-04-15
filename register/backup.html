@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+    <style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #F9F9F9;
+		}
+
+		h2 {
+			text-align: center;
+			color: #333;
+			margin-top: 50px;
+		}
+
+		form {
+			max-width: 500px;
+			margin: 0 auto;
+			background-color: #FFF;
+			padding: 20px;
+			box-shadow: 0 0 10px #DDD;
+			border-radius: 5px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+			color: #777;
+		}
+
+		input[type=text], input[type=email], input[type=password] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: none;
+			border-radius: 3px;
+			box-shadow: 0 0 5px #DDD;
+		}
+
+		input[type=submit] {
+			background-color: #007BFF;
+			color: #FFF;
+			border: none;
+			border-radius: 3px;
+			padding: 10px 20px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+
+		input[type=submit]:hover {
+			background-color: #0069D9;
+		}
+	</style>
+</head>
+<body>
+	<h2>Registration Form</h2>
+	<form action="register.php" method="POST">
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username" required><br><br>
+		
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required><br><br>
+		
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required><br><br>
+		
+		<input type="submit" value="Register">
+	</form>
+</body>
+</html>
